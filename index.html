@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <main class="board">
+        <section class="board__player board__player--0 board__player__active">
+            <h2 class="board__player__name player__name--0">Player 1</h2>
+            <p class="board__player__score board__player__score--player0"></p>
+            <div class="board__player__current-score">
+                <p class="board__player__current-score__title">Current</p>
+                <p class="board__player__current-score__score board__player__current-score__score--player0">0</p>
+            </div>
+        </section>
+
+        <section class="board__player board__player--1">
+            <h2 class="board__player__name player__name--1">Player 2</h2>
+            <p class="board__player__score board__player__score--player1"></p>
+            <div class="board__player__current-score">
+                <p class="board__player__current-score__title">Current</p>
+                <p class="board__player__current-score__score board__player__current-score__score--player1">0</p>
+            </div>
+        </section>
+
+        <img src="./img/dice-5.png" alt="Playing dice" class="dice" />
+        <button class="btn btn__new">🔄 New game</button>
+        <button class="btn btn__roll">🎲 Roll dice</button>
+        <button class="btn btn__hold">📥 Hold</button>
+
+    </main>
+
+
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
