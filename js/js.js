@@ -37,8 +37,8 @@ const init = () => {
 init();
 //Rolling dice functionality
 const rolling = () => {
-	diceEl.classList.remove('hidden');
 	if (playing) {
+		diceEl.classList.remove('hidden');
 		const dice = Math.floor(Math.random() * 6 + 1);
 		diceEl.src = `./img/dice-${dice}.png`;
 
