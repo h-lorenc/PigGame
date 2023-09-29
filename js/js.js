@@ -27,11 +27,21 @@ const init = () => {
 	scorePlayer1.textContent = 0;
 	player0El.classList.add('board__player__active');
 	document
-		.querySelector(`.board__player--${activePlayer}`)
+		.querySelector(`.board__player--0`)
+		.classList.remove('player--winner');
+	document
+		.querySelector(`.board__player--1`)
 		.classList.remove('player--winner');
 	diceEl.classList.add('hidden');
 	document.querySelector(
 		`.board__player__current-score__score`
+	).textContent = 0;
+
+	document.querySelector(
+		`.board__player__current-score__score--player0`
+	).textContent = 0;
+	document.querySelector(
+		`.board__player__current-score__score--player1`
 	).textContent = 0;
 };
 init();
@@ -57,6 +67,7 @@ const rolling = () => {
 			document.querySelector(
 				`.board__player__current-score__score--player${activePlayer}`
 			).textContent = 0;
+
 			// Toggle backlight player board
 			player0El.classList.toggle('board__player__active');
 			player1El.classList.toggle('board__player__active');
